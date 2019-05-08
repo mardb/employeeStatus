@@ -18,10 +18,8 @@ roomRequest.onreadystatechange = function () {
 };
 roomRequest.open('GET', '../data/rooms.json');
 roomRequest.send();
-//Repeat the same 4 steps of AJAX process
-//the URL for the JSON data is ../data/rooms.json
-//finished widget HTML 
-//complete HTML goes inside div with ID of 'roomList"
+
+
 $(document).ready(function () {
   $.getJSON('../data/employees.json', function (data) {
     var statusHTML = '<ul class="bulleted">';
